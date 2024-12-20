@@ -4,7 +4,7 @@ function sendResponse($value,$message,$data = []){
     header("Content-Type: application/json");
 
     $response = [
-        'succes' => $value,
+        'success' => $value,
         'message' => $message,
         'data' => $data
     ];
