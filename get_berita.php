@@ -13,7 +13,7 @@ function getCurrentUrl()
        $host = $_SERVER['HTTP_HOST']; 
        $uri = $_SERVER['REQUEST_URI'];
 
-       return $protocol.$host."/MobileApiBasic/images/";
+       return $protocol . $host . "/MobileApiBasic/images/";
 }
 
 $judul = isset($_GET["judul"]) ? $_GET["judul"] : "";
@@ -36,5 +36,5 @@ if ($result->num_rows > 0) {
     }
     sendResponse(true, "Berhasil menampilkan seluruh data berita", $data);
     } else {
-        sendResponse(false, "Data berita tidak tersedia", []);
+        sendResponse(false, "Data berita tidak tersedia");
 }
